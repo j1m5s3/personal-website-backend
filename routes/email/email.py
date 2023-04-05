@@ -35,7 +35,7 @@ class Email(MethodView):
         courier_payload = {
             "message": {
                 "content": {
-                    "title": "Resume Request",
+                    "title": "Personal Inquiry",
                     "body": body
                 },
                 "to": {

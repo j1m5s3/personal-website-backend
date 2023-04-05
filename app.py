@@ -19,6 +19,7 @@ app.config["OPENAPI_SWAGGER_UI_PATH"] = "/swagger-ui"
 app.config["OPENAPI_SWAGGER_UI_URL"] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
 
 api = Api(app)
+CORS(app, origins=config["CORS_ORIGINS"])
 
 api.register_blueprint(email_blueprint)
 
